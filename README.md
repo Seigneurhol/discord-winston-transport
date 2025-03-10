@@ -1,7 +1,7 @@
 # Discord Winston Transport
 
 [![npm version](https://img.shields.io/npm/v/discord-winston-transport.svg)](https://www.npmjs.com/package/discord-winston-transport)
-[![Build Status](https://github.com/Seigneurhol/discord-winston-transport/actions/workflows/ci.yml/badge.svg)](https://github.com/Seigneurhol/discord-winston-transport/actions)
+[![Node.js CI](https://github.com/Seigneurhol/discord-winston-transport/actions/workflows/node.js.yml/badge.svg)](https://github.com/Seigneurhol/discord-winston-transport/actions/workflows/node.js.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/Seigneurhol/discord-winston-transport/badge.svg)](https://snyk.io/test/github/Seigneurhol/discord-winston-transport)
 
 A robust and enhanced Winston transport for Discord, supporting advanced formatting, printf-style interpolation, error propagation, and updated dependencies.
