@@ -1,0 +1,30 @@
+# Dependencies
+node_modules
+
+# documents uploadés
+documents/*
+
+# yarn error logs
+yarn-error.log
+
+credentials_vertex*.json
+dialogFlowCredential.json
+
+.pnpm-store
+
+# Environment varibales
+.env*
+!.env*.example
+
+# Code coverage
+coverage
+
+# Builds
+build
+
+#
+.DS_Store
+**/.DS_Store
+
+# Python
+venv

@@ -1,0 +1,65 @@
+{
+  "name": "discord-winston-transport",
+  "version": "1.0.0",
+  "description": "Discord Winston Transport for sending logs to Discord",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Seigneurhol/discord-winston-transport"
+  },
+  "author": "Seigneurhol <seigneurholo@hotmail.fr>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "npm build && cp .env ./build/.env && pm2 start ecosystem.config.json",
+    "dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "prepare": "npm run build",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src",
+    "check-types": "tsc --noEmit",
+    "check-updates": "npx npm-check-updates --interactive --format group -p npm"
+  },
+  "keywords": [
+    "winston",
+    "discord",
+    "transport",
+    "logging",
+    "node.js",
+    "webhook",
+    "notifications"
+  ],
+  "dependencies": {
+    "axios": "^1.8.2",
+    "logform": "^2.7.0",
+    "winston-transport": "^4.9.0"
+  },
+  "peerDependencies": {
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "eslint": "9.22.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-security": "^3.0.1",
+    "nodemon": "^3.1.9",
+    "npm-check-updates": "^17.1.15",
+    "prettier": "^3.5.3",
+    "globals": "^16.0.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
+  }
+}

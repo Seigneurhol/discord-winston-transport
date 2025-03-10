@@ -1,0 +1,97 @@
+You are an expert in Node.js, Express, TypeScript, MongoDB, and Mongoose.
+
+Code Style and Structure:
+- Write concise, technical TypeScript code with accurate examples.
+- Use functional programming patterns; avoid classes except for custom error types.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isConnected, hasError).
+- Structure files: exported functions, middleware, helpers, static content, types.
+- Organize code into layers: controllers, services, repositories, models, and utilities.
+- Keep controllers thin; move business logic to services.
+- Separate route definitions from controller logic.
+- Limit files to a single responsibility; avoid large files with multiple classes or functions.
+
+Naming Conventions:
+- Use lowercase with dashes for directories (e.g., routes/auth-routes).
+- Use PascalCase for interfaces and types (e.g., UserDocument).
+- Use camelCase for variables, functions, and method names.
+
+TypeScript Usage:
+- Use TypeScript for all code; prefer interfaces over types for object shapes.
+- Use explicit types for function parameters and return types.
+- Utilize generics to create reusable components and functions.
+- Use type annotations for function parameters and return types.
+- Use TypeScript enums for fixed sets of constants when appropriate.
+
+Express and Middleware:
+- Use Express Router for organizing routes.
+- Use middleware functions for cross-cutting concerns (e.g., authentication, logging, error handling).
+- Order middleware properly in Express to ensure correct request handling.
+- Keep middleware functions focused and reusable.
+- Use async/await with try-catch blocks for error handling in route handlers.
+
+MongoDB and Mongoose:
+- Define Mongoose schemas using TypeScript interfaces.
+- Use Mongoose middleware (pre/post hooks) sparingly and with caution.
+- Prefer Mongoose queries over the MongoDB native driver when possible.
+- Use lean() for read-only operations to improve performance.
+
+Syntax and Formatting:
+- Use arrow functions for callbacks and anonymous functions.
+- Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.
+- Use template literals for string interpolation.
+
+Error Handling:
+- Use custom error classes extending Error for specific error types.
+- Use a centralized error handling middleware.
+- Implement proper error logging and monitoring.
+
+API Design:
+- Follow RESTful principles for API endpoints.
+- Use versioning in API routes (e.g., /api/v1/users).
+- Use Joi for proper input validation.
+
+Performance Optimization:
+- Use connection pooling for MongoDB connections.
+- Implement caching strategies where appropriate (e.g., Redis).
+- Use indexing in MongoDB to optimize query performance.
+- Implement pagination for large data sets.
+
+Authentication and Security:
+- Use JSON Web Tokens (JWT) for authentication.
+- Implement rate limiting and request throttling.
+- Use CORS middleware to handle cross-origin requests.
+- Always sanitize user inputs to prevent injection attacks.
+
+Testing:
+- Write unit tests for utility functions and helpers.
+- Use integration tests for testing API endpoints.
+- Implement end-to-end tests for critical user flows.
+- Use mocking for external services and databases in tests.
+
+Documentation:
+- Maintain a comprehensive README.md with setup and API documentation.
+- Use Swagger or similar tools for API documentation.
+
+Environment and Configuration:
+- Use dotenv for managing environment variables.
+- Implement a configuration module to centralize app settings.
+- Use different configuration profiles for development, testing, and production.
+- Use pnpm as your package manager.
+
+Logging:
+- Implement structured logging using a library like Winston.
+- Use log levels appropriately (error, warn, info, debug).
+- Avoid logging sensitive information.
+
+Code Quality:
+- Use ESLint with appropriate rules for TypeScript and Node.js.
+- Implement pre-commit hooks to run linters and formatters.
+- Use Prettier for consistent code formatting.
+
+Dependency Management:
+- Keep dependencies up-to-date, but be cautious with major version upgrades.
+- Use exact versions in package.json to ensure reproducible builds.
+- Regularly audit dependencies for security vulnerabilities.
+
+Follow best practices from Node.js, Express, TypeScript, MongoDB, and Mongoose documentation.

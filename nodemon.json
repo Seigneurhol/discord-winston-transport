@@ -1,0 +1,9 @@
+{
+  "watch": ["src"],
+  "ext": ".ts,.js",
+  "ignore": [],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "exec": "npx ts-node --files src/index.ts"
+}
