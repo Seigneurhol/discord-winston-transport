@@ -14,6 +14,14 @@
     "skipLibCheck": true,
     "typeRoots": ["node_modules/@types", "./src/types"],
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    },
+    "declaration": true
   },
   "exclude": [
     "node_modules",
@@ -25,5 +33,6 @@
   "typedocOptions": {
     "entryPoints": ["./src/index.ts", "./src/utils/travelUtils.ts"],
     "out": "docs"
-  }
+  },
+  "include": ["src/**/*", "src/types/*.d.ts"]
 }
